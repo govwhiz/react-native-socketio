@@ -28,10 +28,11 @@ import io.socket.client.IO;
 public class SocketIoReadableNativeMap extends ReadableNativeMap {
     private static final String TAG = "SIOReadableNativeMap";
 
-    protected SocketIoReadableNativeMap(HybridData hybridData) {
-        super(hybridData);
-    }
-    
+//    protected SocketIoReadableNativeMap(HybridData hybridData) {
+//        super(hybridData);
+//    }
+
+
     /**
      * Note: This will only be necessary until RN version 0.26 goes live
      * It will be deprecated from the project, as this is just included in that version of RN.
@@ -81,8 +82,8 @@ public class SocketIoReadableNativeMap extends ReadableNativeMap {
         IO.Options opts = new IO.Options();
 
         while (iterator.hasNextKey()) {
-            Map.Entry pair = (Map.Entry) iterator.next();
-            String key = pair.getKey().toString();
+//            Map.Entry pair = (Map.Entry) iterator.next();
+            String key = iterator.nextKey();
             switch (key) {
                 case "forceNew":
                     opts.forceNew = options.getBoolean(key);

@@ -25,6 +25,11 @@ public class SocketIoPackage implements ReactPackage {
         );
     }
 
+
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Arrays.asList();
+    }
+
     @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         return Arrays.asList();
