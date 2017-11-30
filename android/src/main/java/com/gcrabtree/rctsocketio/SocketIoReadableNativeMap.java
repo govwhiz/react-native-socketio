@@ -28,9 +28,9 @@ import io.socket.client.IO;
 public class SocketIoReadableNativeMap extends ReadableNativeMap {
     private static final String TAG = "SIOReadableNativeMap";
 
-//    protected SocketIoReadableNativeMap(HybridData hybridData) {
-//        super(hybridData);
-//    }
+    protected SocketIoReadableNativeMap(HybridData hybridData) {
+        super(hybridData);
+    }
 
 
     /**
